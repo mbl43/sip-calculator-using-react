@@ -92,8 +92,8 @@ const Sip = () => {
 
   return (
     <>
-      <div className="w-full h-screen bg-gradient-to-r flex items-center justify-center sm:flex-row flex-col relative sm:top-0 top-20">
-        <div className="flex flex-col w-full sm:w-[450px] rounded-2xl p-8 border-2 justify-center items-center border-white m-10 shadow-2xl bg-white bg-opacity-90">
+      <div className="w-full h-screen bg-gradient-to-r flex items-center justify-center sm:flex-row flex-col relative sm:top-0">
+        <div className="flex flex-col w-full sm:w-[450px] rounded-2xl p-8 border-2 justify-center items-center border-white m-10 shadow-2xl bg-white bg-opacity-90 top-[180px] sm:top-0 relative">
           <form className="" onSubmit={calculate}>
             <h2 className="font-bold text-4xl text-gray-800 mb-6">
               SIP Calculator
@@ -189,7 +189,7 @@ const Sip = () => {
 
         {/* Results Section */}
 
-        <div className="min-w-[350px]">
+        <div className="min-w-[350px] sm:top-0 top-[150px] relative">
           <h2>SIP Calculator</h2>
 
           <Doughnut data={data} options={options} />
